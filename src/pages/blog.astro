@@ -1,0 +1,77 @@
+---
+import MainLayout from '../layouts/MainLayout.astro'
+import wallet from '../assets/wallet.jpg';
+import chain from '../assets/chain.jpg.jpeg';
+import flexbox from '../assets/flexboox.png';
+
+export const blogs = [
+  {
+    title: 'Blockchains in a nutshell',
+    imgPath: chain,
+    url: 'https://tomias.hashnode.dev/blockchains-in-a-nutshell',
+  },
+  {
+    title: 'Crypto wallets',
+    imgPath: wallet,
+    url: 'https://tomias.hashnode.dev/crypto-wallets',
+  },
+  {
+    title: 'Flexbox basics',
+    imgPath: flexbox,
+    url: 'https://tomias.hashnode.dev/flexbox-basics',
+  },
+];
+---
+
+<MainLayout frontmatter={{ title: 'Blog' }}>
+    <div class="blog-container">
+        {blogs.map((blog) => (
+            <div class="blog">
+                <a href={blog.url} target="_blank">
+                <img alt="blog-picture" src={blog.imgPath} />
+                <h5>{blog.title}</h5>
+                </a>
+            </div>
+        ))}
+    </div>
+</MainLayout>
+
+<style>
+    .blog-container {
+        padding-top: 3rem;
+        display: flex;
+        gap: 3rem;
+        flex-wrap: wrap;
+        display: flex;
+    }
+
+			@media (max-width: 50em) {
+        .blog-container {
+            justify-content: center;
+          }
+      }
+
+    .blog {
+        text-align: center;
+        border-radius: 5px;
+    }
+
+    .blog:hover{ 
+        cursor: pointer;
+        transform: scale(1.1);
+        transition: all .3s;
+    }
+
+        img {
+            object-fit: cover;
+            width: 250px;
+            height: 150px;
+            border-radius: 10px;
+        }
+    a {
+        all: unset;
+    }
+    a:hover {
+        all: unset;
+    }
+</style>
