@@ -6,7 +6,8 @@ layout: ../../layouts/MainLayout.astro
 
 ## About
 
-Im a **full-stack developer** with a passion to solve real life problems with code.<br />
+Im a **full-stack developer** with a goal to make the world a little better place through coding.
+<br />
 I also enjoy designing simple and beautiful UIs. In my free time my biggest passion is **climbing**.
 
 ## Bio

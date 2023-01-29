@@ -22,17 +22,20 @@ export const projectsContent = [
     url: "https://passion-finder.herokuapp.com/",
   },
 ];
+console.log('THEME', localStorage.getItem("theme"))
 ---
 
-<MainLayout frontmatter={{ title: "Blog" }}>
-  <div class="mb-20 bg-light dark:bg-mainBg">
+<MainLayout frontmatter={{ title: "Projects" }}>
+  <div class="mb-20">
     <h3 class="text-center mb-5 md:text-3xl text-2xl">Most recent projects</h3>
-    <div class="flex justify-center flex-col md:flex-row md:flex-wrap">
+    <div 
+    class="grid md:grid-cols-2 gap-4 justify-center"
+    >
       {
         projectsContent.map(({ imgPath, description, url, title }) => (
           <div
             style={{ position: "relative" }}
-            class="rounded-lg max-w-xs h-max mb-5 mx-4 backdrop-blur-sm bg-white/10"
+            class="bg-white border border-gray-200 rounded-lg shadow dark:bg-slate-800 dark:border-slate-700"
           >
             <img
               src={imgPath}
@@ -41,8 +44,8 @@ export const projectsContent = [
             />
 
             <div class="px-4 pt-4 pb-9 mb-6 text-center">
-              <div class="mb-2 text-2xl font-bold uppercase">{title}</div>
-              <span class="text-sm">{description}</span>
+              <div class="mb-2 text-2xl font-bold uppercase text-black dark:text-white">{title}</div>
+              <p class="text-sm">{description}</p>
             </div>
             <a
               target="_blank"
