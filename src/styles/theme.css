@@ -20,7 +20,7 @@
 	--color-base-white: 0, 0%;
 	--color-base-black: 240, 100%;
 	--color-base-gray: 215, 14%;
-	--color-base-blue: 212, 100%;
+	--color-base-blue: 212, 80%;
 	--color-base-blue-dark: 212, 72%;
 	--color-base-green: 158, 79%;
 	--color-base-orange: 22, 100%;
@@ -47,7 +47,7 @@
 	--color-gray-90: var(--color-base-gray), 90%;
 	--color-gray-95: var(--color-base-gray), 95%;
 
-	--color-blue: var(--color-base-blue), 61%;
+	--color-blue: var(--color-base-blue), 40%;
 	--color-blue-dark: var(--color-base-blue-dark), 39%;
 	--color-green: var(--color-base-green), 42%;
 	--color-orange: var(--color-base-orange), 50%;
@@ -88,23 +88,25 @@ body {
 :root.theme-dark {
 	color-scheme: dark;
 	--theme-accent-opacity: 0.15;
-	--theme-accent: hsla(var(--color-blue), 1);
-	--theme-text-accent: hsla(var(--color-blue), 1);
+	--theme-accent: hsla(var(--color-blue), 20%);
+	--theme-text-accent: hsla(var(--color-base-white), 1);
 	--theme-divider: hsla(var(--color-gray-10), 1);
 	--theme-text: hsla(var(--color-gray-90), 1);
 	--theme-text-light: hsla(var(--color-gray-80), 1);
 
 	/* @@@: not used anywhere */
 	--theme-text-lighter: hsla(var(--color-gray-40), 1);
-	--theme-bg: hsla(215, 28%, 17%, 1);
-  --theme-bg: #03010d;
+	/*--theme-bg: hsla(215, 28%, 17%, 1);*/
+    /*--theme-bg: #0f172a;*/
+	/*--theme-bg: linear-gradient(225deg, hsla(222, 49%, 15%, 1) 0%, hsla(221, 52%, 21%, 1) 17%, hsla(221, 89%, 4%, 1) 100%);  */
+	--theme-bg: linear-gradient(225deg, hsla(222, 56%, 17%, 1) 0%, hsla(222, 53%, 20%, 1) 30%, hsla(224, 85%, 3%, 1) 90%, hsla(224, 85%, 3%, 1) 100%);
 	--theme-bg-hover: hsla(var(--color-gray-40), 1);
 	--theme-bg-offset: hsla(var(--color-gray-5), 1);
 	--theme-code-inline-bg: hsla(var(--color-gray-10), 1);
 	--theme-code-inline-text: hsla(var(--color-base-white), 100%, 1);
 	--theme-code-bg: hsla(var(--color-gray-5), 1);
 	--theme-code-text: hsla(var(--color-base-white), 100%, 1);
-	--theme-navbar-bg: #03010d;
+	--theme-navbar-bg: linear-gradient(225deg, hsla(222, 56%, 17%, 1) 0%, hsla(222, 53%, 20%, 1) 30%, hsla(224, 85%, 3%, 1) 90%, hsla(224, 85%, 3%, 1) 100%);
 	--theme-selection-color: hsla(var(--color-base-white), 100%, 1);
 	--theme-selection-bg: hsla(var(--color-purple), var(--theme-accent-opacity));
 
