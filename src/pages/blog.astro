@@ -24,7 +24,7 @@ export const blogs = [
 ---
 
 <MainLayout frontmatter={{ title: 'Blog' }}>
-    <div class="blog-container">
+    <div class="blog-container pt-8">
         {blogs.map((blog) => (
             <div class="blog">
                 <a href={blog.url} target="_blank">
@@ -38,7 +38,6 @@ export const blogs = [
 
 <style>
     .blog-container {
-        padding-top: 3rem;
         display: flex;
         gap: 3rem;
         flex-wrap: wrap;
