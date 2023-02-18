@@ -1,7 +1,6 @@
 ---
-import pathfinder from "../assets/pathfinderGif.gif";
-import eCommerce from "../assets/techshop.png";
-import passionLogo from "../assets/passion-logo.png";
+import pathfinder from "../images/pathfinderGif.gif";
+import passionLogo from "../images/passion-logo.png";
 import MainLayout from "../layouts/MainLayout.astro";
 
 export const projectsContent = [
@@ -22,7 +21,6 @@ export const projectsContent = [
     url: "https://passion-finder.herokuapp.com/",
   },
 ];
-console.log('THEME', localStorage.getItem("theme"))
 ---
 
 <MainLayout frontmatter={{ title: "Most recent projects" }}>
