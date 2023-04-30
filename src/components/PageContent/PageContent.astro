@@ -25,7 +25,16 @@ const title = frontmatter.title;
 		height: 100%;
 		display: flex;
 		flex-direction: column;
+    position: relative;
+    z-index: 2;
 	}
+
+  .content-title {
+      opacity: .4;
+      font-weight: 700;
+      font-size: 3em;
+      z-index: 3;
+    }
 
 	.content-title::after {
 		content: "";
