@@ -1,0 +1,33 @@
+---
+import MainLayout from '../layouts/MainLayout.astro'
+---
+
+<MainLayout frontmatter={{ title: '' }}>
+    <div class="content container px-2">
+      <h1><span>Fullstack Developer</span></h1>
+      <p>
+I am a full stack developer specializing in frontend development, whose goal is to improve the world one line of code at a time. I try to volunteer to help with various coding projects whenever I have time to jump off the climbing wall (and vice versa).
+      </p>
+    </div>
+</MainLayout>
+
+<style>
+.content h1 span {
+  --primary-200: #b36ce5;
+  --secondary-400: #6befe0;
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke-width: 3px;
+	-webkit-text-stroke-color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 6px;
+/*background: linear-gradient(315deg,hsl(275.4, 72.6%, 67.1%) 25%,var(--secondary-400)) !important;
+background-clip: border-box;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;*/
+}
+.content p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-top: 1rem;
+  }
+</style>

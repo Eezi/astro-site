@@ -2,6 +2,7 @@
 import HeadCommon from '../components/HeadCommon.astro';
 import HeadSEO from '../components/HeadSEO.astro';
 import Header from '../components/Header/Header.astro';
+import AnimatedBackground from '../components/AnimatedBackground/Background.astro'
 import PageContent from '../components/PageContent/PageContent.astro';
 import * as CONFIG from '../config';
 import Footer from '../components/Footer/Footer.astro';
@@ -78,6 +79,7 @@ const currentPage = Astro.url.pathname;
 	<body>
 		<Header currentPage={currentPage} />
 		<main class="layout">
+    	<AnimatedBackground />
 			<div id="grid-main">
 				<PageContent frontmatter={frontmatter}>
 					<slot />
