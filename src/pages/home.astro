@@ -1,33 +1,70 @@
 ---
-import MainLayout from '../layouts/MainLayout.astro'
+import MainLayout from "../layouts/MainLayout.astro";
 ---
 
-<MainLayout frontmatter={{ title: '' }}>
-    <div class="content container px-2">
-      <h1><span>Fullstack Developer</span></h1>
-      <p>
-I am a full stack developer specializing in frontend development, whose goal is to improve the world one line of code at a time. I try to volunteer to help with various coding projects whenever I have time to jump off the climbing wall (and vice versa).
-      </p>
-    </div>
+<MainLayout frontmatter={{ title: "" }}>
+  <div class="px-2">
+  <div class="content container">
+    <h2><span>Fullstack Developer</span></h2>
+    <p>
+      I am a fullstack developer specialized in frontend development, with a
+      goal to improve the world one line of code at a time. I aim to work in
+      various coding projects as a volunteer whenever I have time to jump off
+      the climbing wall (and vice versa).
+    </p>
+  </div>
+  <div class="bio_container mt-20">
+    <h3>Bio</h3>
+
+    <p><b>1996</b> Born in Helsinki, Finland.<br /></p>
+    <p>
+      <span>2016</span> Started my studies in Information and Communication Technology.
+    </p>
+    <p><span>2019</span> Started working at Siemens Healthineers.</p>
+    <p>
+      <span>2020</span> Completed a Bachelor’s Degree in Information and Communication<br
+      /> Technology from Metropolia University of Applied Sciences. Quit working
+      <br /> at Siemens Healthineers and started working at Jakoa as a full-stack
+      developer.
+    </p>
+  </div>
+</div>
 </MainLayout>
 
 <style>
-.content h1 span {
-  --primary-200: #b36ce5;
-  --secondary-400: #6befe0;
-	-webkit-text-fill-color: transparent;
-	-webkit-text-stroke-width: 3px;
-	-webkit-text-stroke-color: #fff;
-	text-transform: uppercase;
-	letter-spacing: 6px;
-/*background: linear-gradient(315deg,hsl(275.4, 72.6%, 67.1%) 25%,var(--secondary-400)) !important;
-background-clip: border-box;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;*/
-}
-.content p {
-    font-size: 1.5rem;
-    line-height: 2rem;
+  p {
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+  }
+  .content h2 span {
+    background: -webkit-linear-gradient(
+      0deg,
+      var(--secondary-color) 0%,
+      var(--main-color) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .content p {
     margin-top: 1rem;
+  }
+
+  .bio_container span {
+    font-weight: bold;
+    margin-right: 8px;
+  }
+
+  .bio_container b {
+    margin-right: 8px;
+  }
+
+  .bio_container span::before {
+    content: "";
+    background: #fff;
+    width: 5px;
+    height: 50px;
+    display: block;
+    margin-left: 24px;
+    border-radius: 5px;
   }
 </style>

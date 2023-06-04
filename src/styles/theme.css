@@ -101,7 +101,8 @@ body {
 	/*--theme-bg: hsla(215, 28%, 17%, 1);*/
     /*--theme-bg: #0f172a;*/
 	/*--theme-bg: linear-gradient(225deg, hsla(222, 49%, 15%, 1) 0%, hsla(221, 52%, 21%, 1) 17%, hsla(221, 89%, 4%, 1) 100%);  */
-	--theme-bg: linear-gradient(225deg, hsla(222, 56%, 17%, 1) 0%, hsla(222, 53%, 20%, 1) 30%, hsla(224, 85%, 3%, 1) 90%, hsla(224, 85%, 3%, 1) 100%);
+	/*--theme-bg: linear-gradient(225deg, hsla(222, 56%, 17%, 1) 0%, hsla(222, 53%, 20%, 1) 30%, hsla(224, 85%, 3%, 1) 90%, hsla(224, 85%, 3%, 1) 100%);*/
+	--theme-bg: #0E141B;
 	--theme-bg-hover: hsla(var(--color-gray-40), 1);
 	--theme-bg-offset: hsla(var(--color-gray-5), 1);
 	--theme-code-inline-bg: hsla(var(--color-gray-10), 1);

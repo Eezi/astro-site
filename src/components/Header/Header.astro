@@ -1,9 +1,5 @@
 ---
-import { getLanguageFromURL, KNOWN_LANGUAGE_CODES } from "../../languages";
 import * as CONFIG from "../../config";
-import SkipToContent from "./SkipToContent.astro";
-import SidebarToggle from "./SidebarToggle";
-import LanguageSelect from "./LanguageSelect";
 import ThemeToggleButton from "../../components/RightSidebar/ThemeToggleButton";
 import BottomNavbar from "../BottomNavbar/BottomNavbar.astro";
 import { SIDEBAR } from "../../config";
@@ -17,13 +13,11 @@ const currentPageMatch = currentPage.endsWith('/')
 	? currentPage.slice(1, -1)
 	: currentPage.slice(1);
 
-const langCode = getLanguageFromURL(currentPage);
-const sidebar = SIDEBAR[langCode];
+const sidebar = SIDEBAR['en'];
 ---
 
 <>
   <header>
-    <SkipToContent />
     <nav class="nav-wrapper" title="Top Navigation">
       <div class="logo flex">
         <a href="/">
